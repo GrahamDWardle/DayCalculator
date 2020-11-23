@@ -1,0 +1,65 @@
+﻿<Window x:Class="DayCalculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DayCalculator"
+        mc:Ignorable="d"
+        Title="Date Caluclator" Height="450" Width="800">
+    <Window.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="HorizontalAlignment" Value="Stretch" />
+            <Setter Property="FontFamily" Value="Comic Sans MS"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="TextAlignment" Value="Right" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="HorizontalAlignment" Value="Stretch" />
+            <Setter Property="FontFamily" Value="Comic Sans MS"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="TextAlignment" Value="Center" />
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="HorizontalAlignment" Value="Stretch" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="FontFamily" Value="Comic Sans MS"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Margin" Value="15" />
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBox Name="Day" Text="1" Grid.Column="0" Grid.Row="0" />
+        <TextBlock Name="DateDay" Text="1" Grid.Column="0" Grid.Row="1" />
+        <TextBox Name="Month" Text="11" Grid.Column="1" Grid.Row="0" />
+        <TextBlock Name="DateMonth" Text="1" Grid.Column="1" Grid.Row="1" />
+        <TextBox Name="Year" Text="2020" Grid.Column="2" Grid.Row="0" />
+        <TextBlock Name="DateYear" Text="1" Grid.Column="2" Grid.Row="1" />
+        <TextBlock Name="Total" Text="1" Grid.Column="3" Grid.Row="0" />
+        <Grid Grid.Row="1" Grid.Column="3">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Name="Differnce" Text="Time span Difference" Grid.Row="0" />
+            <TextBlock Name="Since" Text="Since" Grid.Row="1" />
+            <TextBlock Name="Date" Text="Dec 31" Grid.Row="2" />
+        </Grid>
+        <Button Name="CheckDate" Content="Check Date" Grid.Column="4"  Click="CheckDate_Click"/>
+    </Grid>
+</Window>
