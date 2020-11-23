@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DayCalculator", "DayCalculator\DayCalculator.csproj", "{41F26276-01DB-41A2-83E9-A4F433734350}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestDayCalculator", "UnitTestDayCalculator\UnitTestDayCalculator.csproj", "{EE1FC2A1-2C79-483A-9585-9EF8491C19F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{41F26276-01DB-41A2-83E9-A4F433734350}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{41F26276-01DB-41A2-83E9-A4F433734350}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{41F26276-01DB-41A2-83E9-A4F433734350}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE1FC2A1-2C79-483A-9585-9EF8491C19F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE1FC2A1-2C79-483A-9585-9EF8491C19F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE1FC2A1-2C79-483A-9585-9EF8491C19F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE1FC2A1-2C79-483A-9585-9EF8491C19F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
